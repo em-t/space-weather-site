@@ -31,6 +31,7 @@ class About extends Component {
         <Row className="show-grid text-justify">
           <Col xs={12} sm={8}>
             <div>
+              {/* TODO: fallback kuva jos päivän kuvaa ei löydy */}
               <Image
                 src={todaysImage.url}
                 alt="space"

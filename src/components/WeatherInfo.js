@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { fetchCMEinfo } from "../serviceclient";
+import "./About.css";
 
 class WeatherInfo extends Component {
   state = {
@@ -31,7 +32,9 @@ class WeatherInfo extends Component {
         <h2>{info.name}</h2>
         <p>{info.description}</p>
         <p>
-          <a href={info.source}>Read More</a>
+          <a href={info.source} className="source">
+            Read More
+          </a>
         </p>
       </div>
     );
